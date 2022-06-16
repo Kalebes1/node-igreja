@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/536742de5c.js" crossorigin="anonymous"></script>
+    <script src="js/lightslider.js"></script>
+
+    <title>Assembleia de Deus</title>
+</head>
+
+<body>
+
+    <!--HEADER
+    -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2A438C;">
+            <div class="container">
+                <a href="#home" class="navbar-brand">
+                    <img id="logo" src="images/1.png" alt="logo da Assembleia de Deus">
+                </a>
+
+                <div class="mobile-menu" onclick="menuToggle()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <ul class="navbar-nav ms-auto" id="menu-area">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Programação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="">Localização</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!--Main-->
+    <main>
+
+        <section class="section-banner" style="background-image: url('images/banner.jpg')">
+            <h1>Cultos</h1>
+        </section>
+
+        <!--EVENTOS-->
+        <section class="section-sliders" id="sobre">
+            <div class="container">
+
+                <ul id="adaptive" class="cs-hidden">
+                    <li class="item-a mt-2">
+                        <div class="box">
+                            <img src="images/home-1.jpeg" alt="" class="img-fluid">
+                        </div>
+                    </li>
+
+                    <li class="item-b mt-2">
+
+                        <div class="box">
+                            <img src="images/teste.jpg" alt="" class="img-fluid">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </li>
+
+                    <li class="item-c mt-2">
+                        <div class="box">
+                            <img src="images/home-1.jpeg" alt="" class="img-fluid">
+                        </div>
+                    </li>
+
+                    <li class="item-d mt-2">
+
+                        <div class="box">
+                            <img src="images/home-2.jpg" alt="" class="img-fluid">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+
+                <div class="content">
+                    <h2>Igreja Assembleia de Deus Madureira</h2>
+                    <p>Conservando a Chama Pentecostal!</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section-locale">
+            <div class="container">
+                <h1>Localização</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d339.42836238876157!2d-48.2612814079215!3d-15.740897102033147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bb95dcfc8a463%3A0x6a9b937faa50bd1b!2sIgreja%20Evang%C3%A9lica%20Assembl%C3%A9ia%20de%20Deus-%20Minist%C3%A9rio%20Madureira!5e0!3m2!1spt-BR!2sbr!4v1654887481853!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+
+        <section class="section-scales">
+
+            <div class="container v-center">
+                <h1>Programação</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="g-card">
+                            <div class="card-container">
+                                <div class="card-front" style="background-image: url('images/programacao-ensino.jpg')"
+                                    ;>
+                                    <h2>Culto de Ensino</h2>
+                                </div>
+                                <div class="card-back">
+                                    <p>Toda Terça-Feira ás 19:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="g-card">
+                            <div class="card-container">
+                                <div class="card-front"
+                                    style="background-image: url('images/programacao-libertacao.jpg')" ;>
+                                    <h2>Culto de Libertação</h2>
+                                </div>
+                                <div class="card-back">
+                                    <p>Toda Quinta-Feira ás 19:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="g-card">
+                            <div class="card-container">
+                                <div class="card-front" style="background-image: url('images/programacao-familia.jpg')"
+                                    ;>
+                                    <h2>Culto da Família</h2>
+                                </div>
+                                <div class="card-back">
+                                    <p>Toda Domingo ás 19:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="g-card">
+                            <div class="card-container">
+                                <div class="card-front"
+                                    style="background-image: url('images/programacao-santa-ceia.jpg')" ;>
+                                    <h2>Culto de Santa Ceia</h2>
+                                </div>
+                                <div class="card-back">
+                                    <p>Todo Segundo Sábado do mês ás 19:30</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="g-card">
+                            <div class="card-container">
+                                <div class="card-front" style="background-image: url('images/programacao-escola.jpg')"
+                                    ;>
+                                    <h2>Escola Bíblica</h2>
+                                </div>
+                                <div class="card-back">
+                                    <p>Todo Domingo ás 09:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="g-card">
+                            <div class="card-container">
+                                <div class="card-front" style="background-image: url('images/programacao-oracao.jpg')"
+                                    ;>
+                                    <h2>Oração</h2>
+                                </div>
+                                <div class="card-back">
+                                    <p>Todo Domingo ás 06:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <div class="divider">
+                <div class="row">
+                        <div class="col-md-6">
+                            <div class="content flex-column">
+                                <img src="images/1.png" class="image" alt="">
+                                <h2>ADEXP<br><span>Assembleia de Deus Expansão</span></h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="content mt-2 flex-column">
+                                <h3>Siga-nos</h3>
+                                <div class="social-media">
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="author">
+                            <p>© 1995 - 2022 ADEXP - Assembleia de Deus Expansão. Todos os direitos reservados.</p>
+                            <p>Desenvolvidor por Kalebe Silva</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
