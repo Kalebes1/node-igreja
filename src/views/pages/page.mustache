@@ -1,0 +1,87 @@
+{{>partials/header}}
+
+<!--Main-->
+<main>
+    {{#banner}}
+    <section class="section-banner" style="background-image: url('images/{{background}}')">
+        <h1>{{banner.title}}</h1>
+    </section>
+    {{/banner}}
+
+    {{#escala}}
+    <!--Programação-->
+    <section class="section-scales">
+
+        <div class="container v-center">
+            <h2>Nossa {{banner.title}} Semanal</h2>
+            <div class="row">
+
+                {{#list}}
+                <div class="col-md-4">
+                    <div class="g-card">
+                        <div class="card-container">
+                            <div class="card-front" style="background-image: url('images/{{image}}')" ;>
+                                <h3>{{nome}}</h3>
+                            </div>
+                            <div class="card-back">
+                                <p>{{horario}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/list}}
+
+            </div>
+        </div>
+       {{>partials/igreja}}
+
+    </section>
+    {{/escala}}
+
+    {{#events}}
+    <!--EVENTOS-->
+    <section class="section-sliders">
+        <div class="container">
+            <h2>Nossos Eventos</h2>
+            <ul id="adaptive" class="cs-hidden">
+                {{#list}}
+                <li class="item-a mt-2">
+                    <div class="box">
+                        <img src="images/{{image}}" alt="" class="img-fluid">
+                        <p>{{descricao}}</p>
+                    </div>
+                </li>
+                {{/list}}
+            </ul>
+
+            {{>partials/igreja}}
+
+        </div>
+
+    </section>
+    {{/events}}
+
+
+    {{#localizacao}}
+    <!--LOCALIZAÇÃO--->
+    <section class="section-locale">
+        <div class="container">
+            <h2>Venha nos Visitar</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d339.42836238876157!2d-48.2612814079215!3d-15.740897102033147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bb95dcfc8a463%3A0x6a9b937faa50bd1b!2sIgreja%20Evang%C3%A9lica%20Assembl%C3%A9ia%20de%20Deus-%20Minist%C3%A9rio%20Madureira!5e0!3m2!1spt-BR!2sbr!4v1654887481853!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
+        {{>partials/igreja}}
+
+    </section>
+    {{/localizacao}}
+
+
+</main>
+
+
+
+
+{{>partials/footer}}

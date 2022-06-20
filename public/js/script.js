@@ -1,3 +1,6 @@
+/**
+ * SLIDERS
+ */
 $(document).ready(function() {
     $('#adaptive').lightSlider({
         autoWidth:true,
@@ -8,6 +11,21 @@ $(document).ready(function() {
     });  
   });
 
+
+  /**
+   * MENU
+   */
+
+   function menuToggle(){
+    let menuArea = document.getElementById("menu-area");
+
+    if(menuArea.style.width == '70vw'){
+        menuArea.style.width = '0px';
+    }else{
+        menuArea.style.width = '70vw';
+        menuArea.style.display = 'flex';
+    }
+}
 
 
 

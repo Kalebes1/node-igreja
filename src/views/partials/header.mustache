@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link type="text/css" rel="stylesheet" href="/css/lightslider.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/536742de5c.js" crossorigin="anonymous"></script>
+    <script src="/js/lightslider.js"></script>
+
+    <title>Assembleia de Deus</title>
+</head>
+
+<body>
+
+    <!--HEADER
+    -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2A438C;">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img id="logo" src="images/1.png" alt="logo da Assembleia de Deus">
+                </a>
+
+                <div class="mobile-menu" onclick="menuToggle()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <ul class="navbar-nav ms-auto" id="menu-area">
+                    <li class="nav-item {{#menu.programacao}}active{{/menu.programacao}}">
+                        <a class="nav-link" aria-current="page" href="/">Programação</a>
+                    </li>
+                    <li class="nav-item {{#menu.eventos}}active{{/menu.eventos}}">
+                        <a class="nav-link" aria-current="page" href="/eventos">Eventos</a>
+                    </li>
+                    <li class="nav-item {{#menu.localizacao}}active{{/menu.localizacao}}">
+                        <a class="nav-link" aria-current="page" href="/localizacao">Localização</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
