@@ -13,23 +13,13 @@ const data:Banner[] = [
     },
     {
         type: 'banner',
-        image:'home-1.jpeg',
+        image:'home-2.jpeg',
         descricao:'',
     },
     {
         type: 'banner',
-        image:'home-1.jpeg',
+        image:'home-3.jpeg',
         descricao:'',
-    },
-    {
-        type: 'banner',
-        image:'home-2.jpg',
-        descricao:'Culto abençoado',
-    },
-    {
-        type: 'banner',
-        image:'programacao-ensino.jpg',
-        descricao:'Culto abençoado',
     },
 ]
 

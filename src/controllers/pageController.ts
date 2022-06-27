@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import { Cultos } from '../models/cultos';
 import { Banners } from '../models/banners';
 import { createMenuObject } from '../helpers/createMenuObject'
+import { url } from 'inspector';
 
 export const programacao  = (req:Request, res: Response) =>{
     let list  = Cultos.getAll();
@@ -9,7 +10,7 @@ export const programacao  = (req:Request, res: Response) =>{
         menu:createMenuObject('programacao'),
         banner:{
             title: 'Programação',
-            background:'banner.jpg',
+            background: 'programacao.png'
         },
         escala: true,
         list
@@ -21,7 +22,7 @@ export const eventos  = (req:Request, res: Response) =>{
         menu:createMenuObject('eventos'),
         banner:{
             title: 'Eventos',
-            background:'banner.jpg',
+            background:'eventos.png',
         },
         events:true,
         list
@@ -33,7 +34,7 @@ export const localizacao  = (req:Request, res: Response) =>{
         menu:createMenuObject('localizacao'),
         banner:{
             title: 'Localização',
-            background:'banner.jpg',
+            background:'localizacao.png',
         },
         localizacao:true
     })
